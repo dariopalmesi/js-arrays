@@ -10,7 +10,7 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = ['Nathan', 'Ed', 'Fabio', 'Phil', 'Carlo', 'Lewis', 'Luca']
+const fourthTeacher = teachers
 console.log(fourthTeacher[3]);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
@@ -48,10 +48,10 @@ console.log(lewisIndex);
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = ['Sarah', 'Ed', 'Fabio', 'Phil', 'Carlo', 'Lewis', 'Vanessa'];
+const teachersString = teachers.join();
 console.log(teachersString);
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = [];
+const isTeachersEmpty = teachers.length;
 console.log(isTeachersEmpty);
