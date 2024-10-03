@@ -14,9 +14,8 @@ const fourthTeacher = teachers
 console.log(fourthTeacher[3]);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-let index = fourthTeacher.indexOf('Carlo')
-fourthTeacher.splice(index, 1, "Patrick")
-console.log(fourthTeacher);
+teachers[4] = 'Patrick'
+console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop()
@@ -36,10 +35,8 @@ console.log(teachers);
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = teachers.indexOf('Fabio');
- if (isFabioPresent == 2) {
-  console.log(isFabioPresent);
- }
+const isFabioPresent = teachers.includes('Fabio')
+console.log(isFabioPresent);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
@@ -48,10 +45,10 @@ console.log(lewisIndex);
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = teachers.join();
+const teachersString = teachers.join(', ');
 console.log(teachersString);
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = teachers.length;
+const isTeachersEmpty = teachers.length == 0;
 console.log(isTeachersEmpty);
